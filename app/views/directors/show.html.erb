@@ -42,12 +42,13 @@
         <li class="list-group-item list-group-item-success">
           Filmography
         </li>
-        <li class="list-group-item">
-          Some movie
-        </li>
-        <li class="list-group-item">
-          Another movie
-        </li>
+
+        <% @director.movies.each do |movie| %>
+          <li class="list-group-item">
+            <%= movie.title %>
+          </li>
+        <% end %>
+
       </ul>
     </div>
   </div>
