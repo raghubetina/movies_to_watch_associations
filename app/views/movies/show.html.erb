@@ -43,6 +43,19 @@
           </div>
         </div>
       </div>
+
+      <ul class="list-group">
+        <li class="list-group-item list-group-item-success">
+          Roles
+        </li>
+
+        <% @movie.roles.each do |role| %>
+          <li class="list-group-item">
+            <%= link_to role.character_name, role %>
+          </li>
+        <% end %>
+      </ul>
+
     </div>
   </div>
 </div>

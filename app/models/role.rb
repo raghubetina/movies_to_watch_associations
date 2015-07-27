@@ -1,11 +1,15 @@
 class Role < ActiveRecord::Base
 
-  def actor
+  belongs_to :actor
 
-  end
+  # def actor
+  #   return Actor.find_by({ :id => self.actor_id })
+  # end
 
-  def movie
+  belongs_to :movie
 
-  end
+  # def movie
+  #   return Movie.find_by({ :id => self.movie_id })
+  # end
 
 end
