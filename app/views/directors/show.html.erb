@@ -17,7 +17,7 @@
               <dd><%= @director.image_url %></dd>
 
               <dt>Bio</dt>
-              <dd><%= @director.bio %></dd>
+              <dd><%= truncate(@director.bio) %></dd>
 
               <dt>Dob</dt>
               <dd><%= @director.dob %></dd>
@@ -37,6 +37,18 @@
           </div>
         </div>
       </div>
+
+      <ul class="list-group">
+        <li class="list-group-item list-group-item-success">
+          Filmography
+        </li>
+        <li class="list-group-item">
+          Some movie
+        </li>
+        <li class="list-group-item">
+          Another movie
+        </li>
+      </ul>
     </div>
   </div>
 </div>
